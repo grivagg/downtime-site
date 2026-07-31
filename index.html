@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Downtime - Offline Puzzle Games for Android</title>
   <meta name="description" content="Two complete puzzle games for Android that work with no internet at all. No adverts, no account, no data collected.">
+  <link rel="canonical" href="https://playdowntime.com/">
+  <link rel="icon" href="/assets/icon-512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icon-512.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Downtime">
+  <meta property="og:title" content="Downtime - Offline Puzzle Games for Android">
+  <meta property="og:description" content="Two complete puzzle games for Android that work with no internet at all. No adverts, no account, no data collected.">
+  <meta property="og:url" content="https://playdowntime.com/">
+  <meta property="og:image" content="https://playdowntime.com/assets/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Downtime - Offline Puzzle Games for Android">
+  <meta name="twitter:description" content="Two complete puzzle games for Android that work with no internet at all. No adverts, no account, no data collected.">
+  <meta name="twitter:image" content="https://playdowntime.com/assets/icon-512.png">
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -21,10 +34,16 @@
     .icon { width: 96px; height: 96px; border-radius: 20px; vertical-align: middle; }
     .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 24px 0; }
     .shots img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #e0e0e0; display: block; }
+    .shots-wide { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .cta { margin: 24px 0; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+    .cta img { width: 200px; height: auto; display: block; }
+    .cta a { display: inline-block; text-decoration: none; }
+    .cta .free { color: #666; font-size: 0.9rem; }
+    .trademark { font-size: 0.8rem; color: #888; margin-top: 8px; }
     footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.9rem; color: #666; }
     @media (prefers-color-scheme: dark) {
       body { background: #121212; color: #e8e8e8; }
-      p.tagline, footer { color: #a0a0a0; }
+      p.tagline, footer, .cta .free, .trademark { color: #a0a0a0; }
       a { color: #5fd3c6; }
       .shots img { border-color: #333; }
       footer { border-top-color: #2a2a2a; }
@@ -39,17 +58,36 @@
   airplane mode and nothing changes. No adverts, no account, no sign-in, and no data collected about
   you. About 7 MB.</p>
 
-  <p><em>Coming soon to Google Play.</em></p>
+  <div class="cta">
+    <a href="https://play.google.com/store/apps/details?id=com.ggryva.downtime">
+      <img src="assets/google-play-badge.png" alt="Get it on Google Play">
+    </a>
+    <span class="free">Free, no adverts</span>
+  </div>
 
   <div class="shots">
-    <img src="assets/screenshots/01-tetrix.jpg" alt="Tetrix mid-game, a dense board of coloured blocks">
-    <img src="assets/screenshots/02-carryon.jpg" alt="Carry On mid-level, a crate resting on its target square">
-    <img src="assets/screenshots/03-airplane-mode.jpg" alt="Tetrix being played with airplane mode enabled">
+    <img src="assets/screenshots/01-tightfit-gesture.jpg" alt="Tight Fit mid-game: a part-filled board of coloured blocks with the next piece shown at the side">
+    <img src="assets/screenshots/04-carryon-buttons.jpg" alt="Carry On mid-level: crates and target markers on a grid, with an on-screen d-pad below">
+    <img src="assets/screenshots/08-library.jpg" alt="The Downtime library screen listing both games with progress on each">
+  </div>
+
+  <h2>Plays how you like it</h2>
+  <p>Swipe to play, or use on-screen buttons - whichever suits you. Both games work in portrait and
+  landscape, and there is a light theme and a dark one.</p>
+
+  <div class="shots shots-wide">
+    <img src="assets/screenshots/05-tightfit-landscape.jpg" alt="Tight Fit in landscape, with the board centred and controls split to either side">
+    <img src="assets/screenshots/06-carryon-landscape.jpg" alt="Carry On in landscape, with the puzzle grid centred on screen">
+  </div>
+  <div class="shots">
+    <img src="assets/screenshots/03-tightfit-buttons.jpg" alt="Tight Fit with on-screen buttons: move, rotate and drop controls below the board">
+    <img src="assets/screenshots/02-tightfit-gesture-light.jpg" alt="The same Tight Fit screen in the light theme, with a cream board">
+    <img src="assets/screenshots/07-objectives.jpg" alt="The Tight Fit objectives screen showing bronze, silver and gold tiers with progress">
   </div>
 
   <h2>The games</h2>
-  <p><strong>Tetrix</strong> - a fast, clean block puzzle. Stack the falling pieces, clear the lines,
-  and see how deep you can get before the speed catches up with you.</p>
+  <p><strong>Tight Fit</strong> - a fast, clean block puzzle. Stack the falling pieces, clear the
+  lines, and see how deep you can get before the speed catches up with you.</p>
   <p><strong>Carry On</strong> - 99 box-pushing puzzles in the classic sokoban style, most from
   David W. Skinner's <em>Microban</em> set. Push every box onto its mark.</p>
 
@@ -57,9 +95,10 @@
   <p>Something broken, or an idea? Email <a href="mailto:gennadiygryva@gmail.com">gennadiygryva@gmail.com</a>.</p>
 
   <footer>
-    <a href="press-kit.html">Press kit</a> ·
-    <a href="privacy-policy.html">Privacy policy</a> ·
+    <a href="/press-kit">Press kit</a> ·
+    <a href="/privacy-policy">Privacy policy</a> ·
     <a href="mailto:gennadiygryva@gmail.com">gennadiygryva@gmail.com</a>
+    <p class="trademark">Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </footer>
 </body>
 </html>
