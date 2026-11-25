@@ -40,6 +40,11 @@
       footer { border-top-color: #2a2a2a; }
       a { color: #5fd3c6; }
     }
+    footer .current { font-weight: 600; color: #1a1a1a; }
+    @media (prefers-color-scheme: dark) {
+      footer { color: #a0a0a0; border-top-color: #2a2a2a; }
+      footer .current { color: #e8e8e8; }
+    }
   </style>
 </head>
 <body>
@@ -137,10 +142,11 @@
 
   <footer>
     <a href="/">Home</a> ·
-    <a href="/whats-new">What's new</a> ·
     <a href="/press-kit">Press kit</a> ·
+    <a href="/whats-new">What's new</a> ·
+    <span class="current" aria-current="page">Questions &amp; answers</span> ·
     <a href="/privacy-policy">Privacy policy</a> ·
-    Developer contact: <a href="mailto:gennadiygryva@gmail.com">gennadiygryva@gmail.com</a>
+    <a href="mailto:gennadiygryva@gmail.com">gennadiygryva@gmail.com</a>
   </footer>
 </body>
 </html>

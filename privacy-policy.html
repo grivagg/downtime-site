@@ -33,6 +33,12 @@
       p.date { color: #a0a0a0; }
       a { color: #5fd3c6; }
     }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.9rem; color: #666; }
+    footer .current { font-weight: 600; color: #1a1a1a; }
+    @media (prefers-color-scheme: dark) {
+      footer { color: #a0a0a0; border-top-color: #2a2a2a; }
+      footer .current { color: #e8e8e8; }
+    }
   </style>
 </head>
 <body>
@@ -71,5 +77,13 @@
 
   <h2>Contact</h2>
   <p>Questions? Email: <a href="mailto:gennadiygryva@gmail.com">gennadiygryva@gmail.com</a></p>
+  <footer>
+    <a href="/">Home</a> ·
+    <a href="/press-kit">Press kit</a> ·
+    <a href="/whats-new">What's new</a> ·
+    <a href="/faq">Questions &amp; answers</a> ·
+    <span class="current" aria-current="page">Privacy policy</span> ·
+    <a href="mailto:gennadiygryva@gmail.com">gennadiygryva@gmail.com</a>
+  </footer>
 </body>
 </html>
